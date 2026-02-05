@@ -1,7 +1,7 @@
 name: Exemplo Triggers
 run-name: Exemplo workflow para Triggers, executado por ${{ github.actor }}
-# on:
-#     workflow_dispatch:
+on:
+    workflow_dispatch:
 # on:
 #     push:
 #         branches: ["main", "feature/*"]
@@ -12,9 +12,9 @@ run-name: Exemplo workflow para Triggers, executado por ${{ github.actor }}
 #         branches: ["main"]
 #         types:
 #             - closed
-on:
-    schedule:
-        - cron: "*/2 * * * *"
+# on:
+#     schedule:
+#         - cron: "*/2 * * * *"
 jobs:
     usando_triggers:
         runs-on: ubuntu-latest
