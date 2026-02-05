@@ -10,6 +10,8 @@ run-name: Exemplo workflow para Triggers, executado por ${{ github.actor }}
 on:
     pull_request:
         branches: ["main"]
+        types:
+            - closed
 jobs:
     usando_triggers:
         runs-on: ubuntu-latest
