@@ -2,11 +2,14 @@ name: Exemplo Triggers
 run-name: Exemplo workflow para Triggers, executado por ${{ github.actor }}
 # on:
 #     workflow_dispatch:
+# on:
+#     push:
+#         branches: ["main", "feature/*"]
+#         paths:
+#             - "src/**"
 on:
-    push:
-        branches: ["main", "feature/*"]
-        paths:
-            - "src/**"
+    pull_request:
+        branches: ["main"]
 jobs:
     usando_triggers:
         runs-on: ubuntu-latest
