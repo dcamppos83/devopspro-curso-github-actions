@@ -1,0 +1,15 @@
+name: Template Deploy
+on:
+    workflow_call:
+        inputs:
+            ambiente:
+                type: string
+                default: "DEV"
+                required: true
+                description: "Ambiente onde vai ser feito o deploy"
+jobs:
+    deploy-kubernetes:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy no ambiente
+              run: echo "Executando o deploy no ambiente de ${{ inputs.ambiente }}"
