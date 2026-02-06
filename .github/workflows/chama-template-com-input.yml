@@ -1,4 +1,4 @@
-name: CI/CD Fake
+name: CI/CD Fake com inputs
 on: 
     workflow_dispatch:  
 jobs:
