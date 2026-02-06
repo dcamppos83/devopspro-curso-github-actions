@@ -1,0 +1,21 @@
+name: Concorrrencia
+run-name: Exemplo workflow para Concorrrencia, executado por ${{ github.run_number }}
+on:
+    #push:
+    workflow_dispatch:
+concurrency: chave-teste
+jobs:
+    exemplo-fluxo-01:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Eexecucao job teste
+              run: |
+                sleep 120;
+                echo "Action executada job 01"
+
+    exemplo-fluxo-02:
+        runs-on: ubuntu-latest
+        needs: [exemplo-fluxo-01]
+        steps:
+          - name: Execucao com sucesso
+            run: echo "Executando de fluxo"
