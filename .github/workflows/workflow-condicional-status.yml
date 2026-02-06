@@ -1,5 +1,5 @@
-name: Controle de Fluxo
-run-name: Exemplo workflow para Controle de Fluxo, executado por ${{ github.actor }}
+name: Condicional status
+run-name: Exemplo workflow para Coondicional status, executado por ${{ github.actor }}
 on:
     push:
 jobs:
