@@ -24,4 +24,4 @@ jobs:
               run: ech "Executando comando"
             - name: Envio de erros
               if: ${{ failure() }}
-              run: ech "Executando comando"
+              run: echo "Envia email"
