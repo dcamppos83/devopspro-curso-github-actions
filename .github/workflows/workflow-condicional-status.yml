@@ -1,7 +1,8 @@
 name: Condicional status
 run-name: Exemplo workflow para Coondicional status, executado por ${{ github.actor }}
 on:
-    push:
+    #push:
+    workflow_dispatch:
 jobs:
     apenas-main:
         if: ${{ github.ref == 'refs/heads/main' }}
