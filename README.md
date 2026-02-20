@@ -1,3 +1,3 @@
 # devopspro-curso-github-actions
 
-PR Teste
+PR Teste AI platform
